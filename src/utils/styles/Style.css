@@ -111,7 +111,7 @@ body {
         padding-right: 20px;
     }
     .welsec {
-        padding-top: 9vh;
+        padding-top: 6vh;
         margin-top: auto;
         margin-bottom: auto;
         text-align: center;
@@ -246,17 +246,19 @@ body {
 
 @media screen and (max-width: 500px) {
     .pos {
+        font-size: smaller !important;
         position: absolute !important;
         top: 41% !important;
-        left: 23%!important
+        left: 32%!important
     }
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 408px) {
     .pos {
+        font-size: smaller !important;
         position: absolute !important;
         top: 41% !important;
-        left: 17%!important
+        left: 15%!important
     }
 }
 
