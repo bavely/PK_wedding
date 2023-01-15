@@ -243,6 +243,22 @@ body {
     }
 }
 
+@media screen and (max-width: 500px) {
+    .pos {
+        position: absolute !important;
+        top: 41% !important;
+        left: 23%!important
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .pos {
+        position: absolute !important;
+        top: 41% !important;
+        left: 17%!important
+    }
+}
+
 
 /* Dashboard */
 
