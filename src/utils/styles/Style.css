@@ -16,7 +16,8 @@ body {
 }
 
 * {
-    font-family: 'Great Vibes', cursive !important;
+    /* font-family: 'Great Vibes', cursive; */
+    font-family: 'Reem Kufi Fun', sans-serif !important;
 }
 
 .p {
