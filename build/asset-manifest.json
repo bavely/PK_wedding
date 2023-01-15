@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.bfc4958c.css",
+    "main.js": "/static/js/main.9c792830.js",
+    "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
+    "static/media/AdobeStock_228261568.jpeg": "/static/media/AdobeStock_228261568.2e453358c8eabb520881.jpeg",
+    "static/media/Myproject-1.png": "/static/media/Myproject-1.95dbf89ade615d567cf5.png",
+    "static/media/AdobeStock_100295281.jpeg": "/static/media/AdobeStock_100295281.8ce049f72559a8181db9.jpeg",
+    "static/media/bride-1837148.jpg": "/static/media/bride-1837148.8e950a609c6ed5846970.jpg",
+    "static/media/us.png": "/static/media/us.35dbc46412f91a3c7736.png",
+    "static/media/map.png": "/static/media/map.4fe881a6ee84e4dc9242.png",
+    "static/media/cal.png": "/static/media/cal.dd30bcbdbfc381a8cb9c.png",
+    "index.html": "/index.html",
+    "main.bfc4958c.css.map": "/static/css/main.bfc4958c.css.map",
+    "main.9c792830.js.map": "/static/js/main.9c792830.js.map",
+    "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bfc4958c.css",
+    "static/js/main.9c792830.js"
+  ]
+}
