@@ -101,7 +101,7 @@ body {
         background-position-y: top;
     }
     .welmsg {
-        font-size: 1rem;
+        font-size: 13px;
         /* font-weight: bold; */
         color: #fff;
         text-shadow: 2px 2px 4px #000000;
@@ -111,7 +111,7 @@ body {
         padding-right: 20px;
     }
     .welsec {
-        padding-top: 6vh;
+        padding-top: 5vh;
         margin-top: auto;
         margin-bottom: auto;
         text-align: center;
