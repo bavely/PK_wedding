@@ -20,11 +20,25 @@ function Dashboard() {
     setClock(clock);
   };
 
+  let squareStyleTop = 10;
+function TingLing (){
+    squareStyleTop += 10;
+    document.getElementById("sjuku").style.left = squareStyleTop + "px";
+    document.getElementById("right").style.right = squareStyleTop + "px";
+    console.log("squareStylTop is ", squareStyleTop)
+}
+setInterval(TingLing, 24 *60 * 60 *1000);
+
   return (
     <div className="row">
       <div className="col-md-9 offset-md-2  ">
         <h2 className="text-center cdtitle"> It is happining in:</h2>
         <Count onClockChange={handleClock} />
+      </div>
+      <hr />
+      <div className="col-md-9 offset-md-2 text-center">
+      <div id="sjuku"></div>        
+      <div id="right" ></div>      
       </div>
       <hr />
       <div className="col-md-6 offset-md-3 text-center">

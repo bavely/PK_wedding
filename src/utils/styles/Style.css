@@ -304,3 +304,26 @@ img {
         margin-right: 139px
     }
 }
+
+
+/* *************** moving ***************** */
+
+#denneYes {
+    position: absolute;
+    left: 1300px;
+}
+
+#sjuku {
+    height: 2em;
+    width: 2em;
+    background-color: #00ffff;
+    position: absolute;
+}
+
+#right {
+    height: 2em;
+    width: 2em;
+    background-color: #ff4800;
+    position: absolute;
+    float: right;
+}
