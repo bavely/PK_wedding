@@ -1,22 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.2ad61898.css",
-    "main.js": "/static/js/main.58ae1e1b.js",
+    "main.css": "/static/css/main.8260e587.css",
+    "main.js": "/static/js/main.d0fa17e2.js",
     "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
     "static/media/AdobeStock_228261568.jpeg": "/static/media/AdobeStock_228261568.2e453358c8eabb520881.jpeg",
     "static/media/Myproject-1.png": "/static/media/Myproject-1.95dbf89ade615d567cf5.png",
+    "static/media/pavli.png": "/static/media/pavli.8c8317c3558a8bc20fa0.png",
     "static/media/AdobeStock_100295281.jpeg": "/static/media/AdobeStock_100295281.8ce049f72559a8181db9.jpeg",
     "static/media/bride-1837148.jpg": "/static/media/bride-1837148.8e950a609c6ed5846970.jpg",
+    "static/media/koki.png": "/static/media/koki.b06a3797b97a0bc2c89c.png",
     "static/media/us.png": "/static/media/us.35dbc46412f91a3c7736.png",
     "static/media/map.png": "/static/media/map.4fe881a6ee84e4dc9242.png",
     "static/media/cal.png": "/static/media/cal.dd30bcbdbfc381a8cb9c.png",
     "index.html": "/index.html",
-    "main.2ad61898.css.map": "/static/css/main.2ad61898.css.map",
-    "main.58ae1e1b.js.map": "/static/js/main.58ae1e1b.js.map",
+    "main.8260e587.css.map": "/static/css/main.8260e587.css.map",
+    "main.d0fa17e2.js.map": "/static/js/main.d0fa17e2.js.map",
     "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2ad61898.css",
-    "static/js/main.58ae1e1b.js"
+    "static/css/main.8260e587.css",
+    "static/js/main.d0fa17e2.js"
   ]
 }

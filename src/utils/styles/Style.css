@@ -309,16 +309,20 @@ img {
 /* *************** moving ***************** */
 
 #sjuku {
-    height: 2em;
-    width: 2em;
-    background-color: #00ffff;
+    height: fit-content;
+    width: 10em;
+    /* background-image: url('../images/koki.png');
+    background-position: center;
+    background-size: cover; */
     position: absolute;
 }
 
 #right {
-    height: 2em;
-    width: 2em;
-    background-color: #ff4800;
+    height: fit-content;
+    width: 10em;
+    /* background-color: url('../images/pavli.png');
+    background-position: center;
+    background-size: cover; */
     position: absolute;
     float: right;
 }

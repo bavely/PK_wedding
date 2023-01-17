@@ -59,9 +59,9 @@ useEffect(() => {
         <Count onClockChange={handleClock} />
       </div>
       <hr />
-      <div className="col-md-9 offset-md-2 text-center" style={{height:"100px"}}>
-      <div id="sjuku" style={{left:`${space}px`}}></div>        
-      <div id="right" style={{right :`${space}px`}} ></div>      
+      <div className="col-md-9 offset-md-2 text-center" style={{height:"30vh"}}>
+      <div id="sjuku" style={{left:`${space}px`}}><img alt="koki" src={require("../../utils/images/koki.png")} style={{height:"100%"}}/></div>        
+      <div id="right" style={{right :`${space}px`}} ><img alt="pavli" src={require("../../utils/images/pavli.png")}  style={{height:"100%"}}/></div>      
       </div>
       <hr />
       <div className="col-md-6 offset-md-3 text-center">
