@@ -1,33 +1,56 @@
 import React from "react";
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState, useRef } from "react";
 import Count from "../common/countdown/Count";
 import Arabic from "../../utils/helpers/Arabic";
-// import pcloudSdk from 'pcloud-sdk-js';
 import axios from 'axios';
 
 function Dashboard() {
-  // const client = pcloudSdk.createClient('bvLtl1aXsRzI8auhR1IfYpEz5qtV');
-  const [Clock, setClock] = useState({});
 
-// then list root folder's contents:
-        
-          // axios.get("https://api.pcloud.com/userinfo",{path: "Applications"},{headers: {
-          //   Authorization:"bvLtl1aXsRzI8auhR1IfYpEz5qtV",
-          //   'Content-Type': "application/json"
-          // }} ).then((res)=>{console.log(res)}).catch((err)=>{console.log(err)})
+  const windowSize = useRef(window.innerWidth);
+let count = 0;
+  const [Clock, setClock] = useState({});
+  const [space, setSpace] = useState(0);
+  const [intervalId, setIntervalId] = useState(0);
+  const [screenHalf, setScreenHalf] = useState(windowSize.current/2);
+
+
 
   const handleClock = (clock) => {
     setClock(clock);
   };
 
-  let squareStyleTop = 10;
-function TingLing (){
-    squareStyleTop += 10;
-    document.getElementById("sjuku").style.left = squareStyleTop + "px";
-    document.getElementById("right").style.right = squareStyleTop + "px";
-    console.log("squareStylTop is ", squareStyleTop)
+
+ const TingLing = ()=>{
+
+  if (count < screenHalf){
+    count = count + 1;
+    setSpace(count);
+  }else{
+    setSpace(0);
+    count = 0;
+    clearInterval(intervalId);
+    startTingLing();
+    
+  }
+ 
 }
-setInterval(TingLing, 24 *60 * 60 *1000);
+
+console.log(space);
+console.log(screenHalf);
+const startTingLing = ()=>{
+  const intrv = setInterval(TingLing, 1000);
+  setIntervalId(intrv);
+}
+useEffect(() => {
+  startTingLing();
+}, []);
+
+useEffect(() => {
+  setScreenHalf(windowSize.current/2)
+}, [windowSize.current]);
+
+
+
 
   return (
     <div className="row">
@@ -36,9 +59,9 @@ setInterval(TingLing, 24 *60 * 60 *1000);
         <Count onClockChange={handleClock} />
       </div>
       <hr />
-      <div className="col-md-9 offset-md-2 text-center">
-      <div id="sjuku"></div>        
-      <div id="right" ></div>      
+      <div className="col-md-9 offset-md-2 text-center" style={{height:"100px"}}>
+      <div id="sjuku" style={{left:`${space}px`}}></div>        
+      <div id="right" style={{right :`${space}px`}} ></div>      
       </div>
       <hr />
       <div className="col-md-6 offset-md-3 text-center">
