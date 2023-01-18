@@ -1,5 +1,5 @@
 import React from "react";
-import { useContext, useEffect, useState, useRef } from "react";
+import { useContext, useEffect, useState, useRef, useLayoutEffect } from "react";
 import Count from "../common/countdown/Count";
 import Arabic from "../../utils/helpers/Arabic";
 import axios from 'axios';
@@ -7,11 +7,15 @@ import axios from 'axios';
 function Dashboard() {
 
   const windowSize = useRef(window.innerWidth);
+  
+  const mydiv = useRef();
 let count = 0;
   const [Clock, setClock] = useState({});
   const [space, setSpace] = useState(0);
   const [intervalId, setIntervalId] = useState(0);
   const [screenHalf, setScreenHalf] = useState(windowSize.current/2);
+  // const[imgwidth, setImgWidth] = useState(0);
+  let imgwidth
 
 
 
@@ -22,27 +26,28 @@ let count = 0;
 
  const TingLing = ()=>{
 
-  if (count < screenHalf){
-    count = count + 1;
+  console.log(screenHalf)
+  console.log(imgwidth)
+console.log(screenHalf-imgwidth)
+console.log(count)
+  if (count < screenHalf-imgwidth){
+    count = count + 20;
     setSpace(count);
   }else{
     setSpace(0);
-    count = 0;
-    clearInterval(intervalId);
-    startTingLing();
-    
+    count = 0; 
   }
  
 }
 
-console.log(space);
-console.log(screenHalf);
-const startTingLing = ()=>{
-  const intrv = setInterval(TingLing, 1000);
-  setIntervalId(intrv);
-}
+useLayoutEffect(() => {
+console.log(mydiv.current.offsetWidth);
+imgwidth = mydiv.current.offsetWidth;
+// setImgWidth(mydiv.current.offsetWidth);
+}, []);
+
 useEffect(() => {
-  startTingLing();
+  let intrv = setInterval(TingLing, 1000);
 }, []);
 
 useEffect(() => {
@@ -60,7 +65,7 @@ useEffect(() => {
       </div>
       <hr />
       <div className="col-md-9 offset-md-2 text-center" style={{height:"30vh"}}>
-      <div id="sjuku" style={{left:`${space}px`}}><img alt="koki" src={require("../../utils/images/koki.png")} style={{height:"100%"}}/></div>        
+      <div id="sjuku"  style={{left:`${space}px`}}><img alt="koki" src={require("../../utils/images/koki.png")} ref={mydiv} style={{height:"100%"}}/></div>        
       <div id="right" style={{right :`${space}px`}} ><img alt="pavli" src={require("../../utils/images/pavli.png")}  style={{height:"100%"}}/></div>      
       </div>
       <hr />
