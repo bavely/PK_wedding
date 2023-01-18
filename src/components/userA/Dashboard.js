@@ -25,12 +25,16 @@ let count = 0;
 
 
  const TingLing = ()=>{
-
+  
+  let halfimg = imgwidth/2;
+  let widthtosub 
   console.log(screenHalf)
-  console.log(imgwidth)
-console.log(screenHalf-imgwidth)
-console.log(count)
-  if (count < screenHalf-imgwidth){
+  if (screenHalf<301){
+widthtosub = screenHalf - imgwidth - halfimg;
+  }else{
+    widthtosub = screenHalf - imgwidth ;
+  }
+  if (count < widthtosub){
     count = count + 20;
     setSpace(count);
   }else{
@@ -41,7 +45,7 @@ console.log(count)
 }
 
 useLayoutEffect(() => {
-console.log(mydiv.current.offsetWidth);
+console.log(mydiv.current.innerWidth);
 imgwidth = mydiv.current.offsetWidth;
 // setImgWidth(mydiv.current.offsetWidth);
 }, []);
